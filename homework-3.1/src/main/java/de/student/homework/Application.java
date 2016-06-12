@@ -23,14 +23,7 @@ public class Application {
       List<Document> docs = students.find().into(new ArrayList<Document>());
       docs.stream().forEach((doc) -> {
 
-         // List all score entries from each document
          ArrayList<Document> scores = (ArrayList) doc.get("scores");
-         scores.stream().forEach((score) -> {
-//            System.err.println(doc.get("name"));
-//            printJson(score);
-         });
-
-         // Find the low value of both homework scores
          Document scoreToBeRemoved = scores.stream()
                  .filter(homeworkScore -> homeworkScore.get("type", String.class).equals("homework"))
                  .reduce((p1, p2) -> (Double) p1.get("score") >= (Double) p2.get("score") ? p2 : p1)
