@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>create_blog_authors</module>
-        <module>mongo_lesson_2</module>
+        <module>crud</module>
         <module>homework-3.1</module>
         <module>blog_accepting_posts_and_comments</module>
     </modules>

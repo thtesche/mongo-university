@@ -14,3 +14,5 @@ hs_err_pid*
 /mongo_lesson_2/target/
 /homework-3.1/target/
 /blog_accepting_posts_and_comments/target/
+/crud/target/
+/blog_accepting_posts_and_comments/nb-configuration.xml
